@@ -274,14 +274,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}/api/kodea",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"api",
-										"kodea"
-									]
+									"raw": ""
 								}
 							},
 							"response": []
@@ -579,13 +572,14 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}/api/kodec",
+									"raw": "{{url}}/api/kodec/2",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"api",
-										"kodec"
+										"kodec",
+										"2"
 									]
 								}
 							},
@@ -731,13 +725,14 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}/api/koded",
+									"raw": "{{url}}/api/koded/4",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"api",
-										"koded"
+										"koded",
+										"4"
 									]
 								}
 							},
@@ -1192,13 +1187,14 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}/api/subkegiatan",
+									"raw": "{{url}}/api/subkegiatan/1",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"api",
-										"subkegiatan"
+										"subkegiatan",
+										"1"
 									]
 								}
 							},
@@ -1350,13 +1346,14 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}/api/tahun",
+									"raw": "{{url}}/api/tahun/1",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"api",
-										"tahun"
+										"tahun",
+										"1"
 									]
 								}
 							},
@@ -1379,7 +1376,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"tahun\":\"2000\",\r\n    \"pagu\":\"1234567890\",\r\n    \"keluaran\":\"Bla bla bla\",\r\n    \"hasil\":\"Weh Weh Weh\",\r\n    \"idsubkegiatan\":\"1\"\r\n}",
+									"raw": "{\r\n    \"tahun\":\"2023\",\r\n    \"pagu\":\"444444\",\r\n    \"keluaran\":\"eweewte bla bla\",\r\n    \"hasil\":\"xxx Weh Weh\",\r\n    \"idsubkegiatan\":\"2\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
