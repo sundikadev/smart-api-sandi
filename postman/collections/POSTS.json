@@ -1,0 +1,1637 @@
+{
+	"info": {
+		"_postman_id": "a9fe2d13-dff0-4d7b-9dd4-8cdee56b9922",
+		"name": "POSTS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "17474355-a9fe2d13-dff0-4d7b-9dd4-8cdee56b9922"
+	},
+	"item": [
+		{
+			"name": "OTENTIKASI",
+			"item": [
+				{
+					"name": "Login",
+					"id": "ae6cb6b0-710e-4989-b2ec-b8a454bbdc1e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "a@a.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "rahasia",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"id": "69f4c892-7066-4680-bfc1-8bda538eb6a3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 3|b1EtW95M7sIIXCJFQRD3OmqBqyA2AaHVHN3ajxdK",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/logout",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"logout"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Me",
+					"id": "d7fdd584-b91e-421d-88cd-4fc1ccceb210",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 4|o4sAijKLiXIpSHkaSQbUxYNg2pPdrramaRPk0PUZ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/me",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"me"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "d5d8666a-fb29-4c65-8e16-15938afae37e"
+		},
+		{
+			"name": "sisa",
+			"item": [
+				{
+					"name": "store_kodea",
+					"id": "50e5f8ec-9ed1-4592-b05d-e2fe9cd4f18e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/ckodea",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"ckodea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-kodeb_all",
+					"id": "3e65d316-e654-4dd4-a902-86f4935d0915",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|IUAOpBwzsfJ8XR7rFrayiSAqWkvSJ4Zv3K52VobA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/kodeb/6",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"kodeb",
+								"6"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-kodeb_kodea",
+					"id": "dcc21cd2-d27e-4241-93df-2bd9dcf62a89",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|IUAOpBwzsfJ8XR7rFrayiSAqWkvSJ4Zv3K52VobA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/kodeb/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"kodeb",
+								"1"
+							],
+							"query": [
+								{
+									"key": "Accept",
+									"value": "A",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "5d5f4a93-cacb-4f89-9621-2c56fbf5639c"
+		},
+		{
+			"name": "KODE REKENING",
+			"item": [
+				{
+					"name": "KODEA",
+					"item": [
+						{
+							"name": "List - Show",
+							"id": "0b15ff58-75df-44f9-9eaf-38d06b7a534e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 1|IUAOpBwzsfJ8XR7rFrayiSAqWkvSJ4Zv3K52VobA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/kodea",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"kodea"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Store",
+							"id": "a78a19f6-13a4-478f-902a-182e2503759f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"kode\":\"30\",\r\n    \"nama\":\"haloha\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/kodea",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"kodea"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"id": "097c2460-2b98-4a07-ab1a-80a5f18edc6e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\":\"halohaaaaaaa\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/kodea/7",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"kodea",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Destroy",
+							"id": "49e490bb-f5eb-4e0c-a854-177fc6763b8b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\":\"putu\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/kodea/3",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"kodea",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "5c3dcd2a-4025-461e-992e-cf3164008add"
+				},
+				{
+					"name": "KODEB",
+					"item": [
+						{
+							"name": "List - Show",
+							"id": "eed8f8c1-0b9c-4788-90d0-01891e2e4340",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 1|IUAOpBwzsfJ8XR7rFrayiSAqWkvSJ4Zv3K52VobA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/kodeb/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"kodeb",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Store",
+							"id": "8ffda878-6eda-464a-bd2b-ac25f8ac689b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"kode\":\"5.1.02.04\",\r\n    \"kodea\":\"2\",\r\n    \"nama\":\"Belanja Perjalanan Dinas\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/kodeb",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"kodeb"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"id": "f2309e21-a184-4577-9815-36bbb3e4ea78",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\":\"nukenueke\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/kodeb/6",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"kodeb",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Destroy",
+							"id": "6d936de6-5521-4729-b6b7-39b244974b14",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\":\"putu\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/kodeb/6",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"kodeb",
+										"6"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "808981b4-1cf0-451f-b883-0af5fe1600cc"
+				},
+				{
+					"name": "KODEC",
+					"item": [
+						{
+							"name": "List - Show",
+							"id": "f66d0528-7b98-4d25-ae40-3cc01451c205",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 1|IUAOpBwzsfJ8XR7rFrayiSAqWkvSJ4Zv3K52VobA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/kodec",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"kodec"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Store",
+							"id": "c60ceda7-86b4-4be9-937c-b110107658b6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"kode\":\"111\",\r\n    \"kodeb\":\"7\",\r\n    \"nama\":\"trtrhrth dth\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/kodec",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"kodec"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"id": "952707a5-3bdc-4d66-a178-70cca2493027",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\":\"Belanja Perjalanan Dinas Dalam Negeri\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/kodec/4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"kodec",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Destroy",
+							"id": "5dfddf8c-ab54-49e2-848c-77b6ad446190",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\":\"putu\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/kodec/5",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"kodec",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "f8905486-214f-478c-bfed-987b6ecee1a6"
+				},
+				{
+					"name": "KODED",
+					"item": [
+						{
+							"name": "List - Show",
+							"id": "a5dcc849-8eec-4efe-b7de-716d8a48f84a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 1|IUAOpBwzsfJ8XR7rFrayiSAqWkvSJ4Zv3K52VobA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/koded",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"koded"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Store",
+							"id": "22fcc80d-d644-4463-9ec1-a947b46cc309",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"kode\":\"5.1.02.04.01.0003\",\r\n    \"kodec\":\"4\",\r\n    \"nama\":\"Belanja Perjalanan Dinas Dalam Kota\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/koded",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"koded"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"id": "15e449fc-1f08-4039-9193-dd6d4c2c425f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\":\"Belanja Perjalanan Dinas Dalam Kota\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/koded/6",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"koded",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Destroy",
+							"id": "f8232969-0cbe-4837-b7aa-cf8c1544f1dd",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\":\"putu\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/koded",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"koded"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "8e29d8c2-360e-4c31-8665-f880cc15c22c"
+				}
+			],
+			"id": "f10828ef-a73c-4a2a-8bd2-6b73024874a1"
+		},
+		{
+			"name": "PROGRAM",
+			"item": [
+				{
+					"name": "List - Show",
+					"id": "b9ba3670-bbb8-4efb-910d-c3d96ed2b315",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|IUAOpBwzsfJ8XR7rFrayiSAqWkvSJ4Zv3K52VobA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/program",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"program"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"id": "943bfa73-aef6-4aed-beba-dce47819f9c0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kode\":\"10\",\r\n    \"nama\":\"fbrtbrtn\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/program",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"program"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"id": "8c452f26-67c0-41eb-858b-937c4e0e1ebc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\":\"halohaaaaaaa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/program/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"program",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"id": "7cb948ac-c191-4a99-ab3b-ce910cca7678",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\":\"putu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/program/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"program",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "fba79ee8-6b20-4def-9e4f-610c2cb1a4af"
+		},
+		{
+			"name": "KEGIATAN",
+			"item": [
+				{
+					"name": "KEGIATAN",
+					"item": [
+						{
+							"name": "List - Show",
+							"id": "090736b3-0d79-48bf-ab00-451952224762",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 1|IUAOpBwzsfJ8XR7rFrayiSAqWkvSJ4Zv3K52VobA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/kegiatan",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"kegiatan"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Store",
+							"id": "015bfc20-9f66-4d97-ba7b-3c131c6d86d4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"kode\":\"30\",\r\n    \"nama\":\"haloha\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/kegiatan",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"kegiatan"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"id": "ffeab2f3-b2c7-451b-a70b-26a0b070e227",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\":\"halohaaadddddddddddddddddddddaaaa\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/kegiatan/2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"kegiatan",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Destroy",
+							"id": "e10eb2a8-cb0a-4482-81ba-ba222ad35e2e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\":\"putu\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/kegiatan/2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"kegiatan",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "f714df52-8982-4f1d-8c01-da3cd346786a"
+				},
+				{
+					"name": "SUB KEGIATAN",
+					"item": [
+						{
+							"name": "List - Show",
+							"id": "b2f79431-829e-4e93-8638-2e3e39f213c5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 1|IUAOpBwzsfJ8XR7rFrayiSAqWkvSJ4Zv3K52VobA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/subkegiatan",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"subkegiatan"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Store",
+							"id": "c5ba9298-cea4-4f6e-9e21-76832c6999a8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"kode\":\"30\",\r\n    \"nama\":\"haloha\",\r\n    \"idkegiatan\":\"1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/subkegiatan",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"subkegiatan"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"id": "5dcba6d2-7dff-49be-b1fc-4190e04b5783",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\":\"ddddddd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/subkegiatan/2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"subkegiatan",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Destroy",
+							"id": "8c5d61d1-56d5-491f-9598-e5b4402d0e87",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\":\"putu\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/subkegiatan/2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"subkegiatan",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "a6d77ac2-3301-45da-8538-c05e0daf3d95"
+				}
+			],
+			"id": "9117b872-0f18-433f-b84a-c466ad24f82b"
+		},
+		{
+			"name": "DPA",
+			"item": [
+				{
+					"name": "TAHUN",
+					"item": [
+						{
+							"name": "List - Show",
+							"id": "cc1f40ad-bb3a-4939-a548-b14269f9143e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 1|IUAOpBwzsfJ8XR7rFrayiSAqWkvSJ4Zv3K52VobA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/tahun",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"tahun"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Store",
+							"id": "43aaf637-ef95-462c-8b9b-710d624190d3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tahun\":\"2000\",\r\n    \"pagu\":\"1234567890\",\r\n    \"keluaran\":\"Bla bla bla\",\r\n    \"hasil\":\"Weh Weh Weh\",\r\n    \"idsubkegiatan\":\"1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/tahun",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"tahun"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"id": "c3c38572-cd4c-4503-b162-8bc258de8c35",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tahun\":\"2001\",\r\n    \"pagu\":\"1234567890\",\r\n    \"keluaran\":\"XXXBla bla bla\",\r\n    \"hasil\":\"YYWeh Weh Weh\",\r\n    \"idsubkegiatan\":\"1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/tahun/2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"tahun",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Destroy",
+							"id": "17e6895c-5188-493c-93bd-baf1dc4f9b7a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\":\"putu\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/tahun/2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"tahun",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "1d4252cd-6602-498a-812c-7e67510cc4cf"
+				},
+				{
+					"name": "ITEM",
+					"item": [
+						{
+							"name": "List - Show",
+							"id": "a0f981c9-d650-4fd8-beee-854c1af64efc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 1|IUAOpBwzsfJ8XR7rFrayiSAqWkvSJ4Zv3K52VobA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/item",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"item"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Store",
+							"id": "19ef3f47-787f-4862-8b54-3ed716e3651d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"kode\":\"30\",\r\n    \"nama\":\"haloha\",\r\n    \"idkegiatan\":\"1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/subkegiatan",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"subkegiatan"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"id": "f6a415f4-5776-43da-8317-e1da94ce9e87",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\":\"ddddddd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/subkegiatan/2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"subkegiatan",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Destroy",
+							"id": "eaac9dba-81be-475c-8fde-ed4ee99d846d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\":\"putu\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/subkegiatan/2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"subkegiatan",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "9219bc16-a80c-48d2-b110-32585e6ad699"
+				}
+			],
+			"id": "ddaf7036-8920-45a7-a4de-743e53fe5a2b"
+		}
+	]
+}
